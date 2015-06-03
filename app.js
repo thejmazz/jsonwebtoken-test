@@ -32,7 +32,10 @@ bcrypt.genSalt(10, function(err, salt) {
         expiresInSeconds: 5
     });
 
+    //console.log(token.length); //228
+    //console.log(token);
+
     //decode();
-    //verify();
-    setTimeout(verify, 6000);
+    verify();
+    //setTimeout(verify, 6000);
 });
